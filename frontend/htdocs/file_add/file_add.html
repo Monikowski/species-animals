@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Animals and species application"/>
+    <meta name="author" content="Mateusz Monikowski"/>
+    <title>Animals and species</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <script type="module" src="file_add.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Animals and species</h1>
+    </header>
+
+<nav class="navigation-bar">
+    <ul>
+        <li><a href="index.html">main</a></li>
+        <li><a href="species_list/species_list.html">all species</a></li>
+        <li><a href="../file_list/file_list.html">all files</a></li>
+    </ul>
+</nav>
+
+<h1>Upload file</h1>
+
+<form id="fileForm">
+    <input id="file" name="file" type="file"/>
+    <br/>
+    <label for="info">Some info</label>
+    <input id="info" name="info" type="text"/>
+    <br/>
+    <label for="email">Some email</label>
+    <input id="email" name="email" type="email"/>
+    <br/><br/>
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
+

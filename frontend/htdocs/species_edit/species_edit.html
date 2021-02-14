@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Animals and species application"/>
+    <meta name="author" content="Mateusz Monikowski"/>
+    <title>Animals and species</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="species_edit.css"/>
+    <script type="module" src="species_edit.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Animals and species</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <li><a href="../species_list/species_list.html">all species</a></li>
+            <li><a href="../file_list/file_list.html">all files</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Edit species info</h2></header>
+            <header><h3 id="species_name">Species's name</h3></header>
+            <form class="species__" id="infoForm">
+                <label for="food_type">Food type:</label>
+                <input class="ui-control ui-input" id="food_type" name="food_type"/>
+                <label for="origin_location">Location of origin:</label>
+                <input class="ui-control ui-input" id="origin_location" name="origin_location"/>
+                <label for="average_age">Average age</label>
+                <input class="ui-control ui-input" id="average_age" name="average_age" type="number"/>
+                <input class="ui-control ui-button" type="submit" name="Update" value="Edit"/>
+            </form>
+        </article>
+    </section>
+
+</div>
+</body>
+</html>

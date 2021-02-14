@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Animals and species application"/>
+    <meta name="author" content="Mateusz Monikowski"/>
+    <title>Animals and species</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <script type="module" src="file_list.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Animals and species</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <li><a href="../species_list/species_list.html">all species</a></li>
+            <li><a href="../file_list/file_list.html">all files</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>All files</h2></header>
+            <section id="addNewFileSection"></section>
+            <table class="data-table" id="tableHead">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>file name</th>
+                    <th>some text</th>
+                    <th>some email</th>
+                    <th>download</th>
+                </tr>
+                </thead>
+                <tbody id="tableBody">
+                <tr>
+                    <td>id</td>
+                    <td>name</td>
+                    <td>text</td>
+                    <td>email</td>
+                    <td><a href="#">download</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+</div>
+</body>
+</html>

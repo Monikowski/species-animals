@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Animals and species application"/>
+    <meta name="author" content="Mateusz Monikowski"/>
+    <title>Animals and species</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="animal_view.css"/>
+    <script type="module" src="animal_view.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Animals and species</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <li><a href="../species_list/species_list.html">all species</a></li>
+            <li><a href="../file_list/file_list.html">all files</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2 id="animal_name">Animal's name</h2>
+            <h3 id="species_name">Species' name</h3></header>
+            <section>
+                <h3>Details</h3>
+                <div class="details-grid">
+                    <label for="age">Age: </label><span id="age">food type</span>
+                    <label for="body_mass">Body mass: </label><span id="body_mass">Body mass</span>
+                    <label for="daily_food_mass">Daily food mass: </label><span id="daily_food_mass">Daily food mass</span>
+                </div>
+            </section>
+        </article>
+    </section>
+
+</div>
+</body>
+</html>

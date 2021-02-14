@@ -1,0 +1,41 @@
+version: "3"
+services:
+  backend-loadbalancer:
+    build: ./loadbalancer_backend
+    ports:
+    - "85:80"
+    networks: 
+    - backend
+    - frontend
+   
+  frontend-loadbalancer:
+    build: ./loadbalancer_frontend
+    ports:
+    - "86:80"
+    networks: 
+    - frontend
+    
+  animals-db:
+    image: mariadb:10.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=db
+    networks:
+    - backend
+        
+  backend:
+    build: ./backend
+    restart: on-failure
+    volumes:
+    - ./storage:/isa_lab6_files
+    networks: 
+    - backend
+    
+  frontend:
+    build: ./frontend
+    networks: 
+    - frontend
+    
+networks:
+  frontend: {}
+  backend: {}

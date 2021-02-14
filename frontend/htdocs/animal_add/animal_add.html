@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Animals and species application"/>
+    <meta name="author" content="Mateusz Monikowski"/>
+    <title>Animals and species</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="animal_add.css"/>
+    <script type="module" src="animal_add.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Animals and species</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <li><a href="../species_list/species_list.html">all species</a></li>
+            <li><a href="../file_list/file_list.html">all files</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Input animal info</h2></header>
+            <form class="animal__" id="infoForm">
+                <label for="name">Name:</label>
+                <input class="ui-control ui-input" id="name" name="name" required/>
+                <label for="age">Age:</label>
+                <input class="ui-control ui-input" id="age" name="age" type="number" required/>
+                <label for="body_mass">Body mass:</label>
+                <input class="ui-control ui-input" id="body_mass" name="body_mass" type="number" required/>
+                <label for="daily_food_mass">Daily food mass:</label>
+                <input class="ui-control ui-input" id="daily_food_mass" name="daily_food_mass" type="number" required/>
+                <input class="ui-control ui-button" type="submit" name="Add" value="Add"/>
+            </form>
+        </article>
+    </section>
+
+</div>
+</body>
+</html>
