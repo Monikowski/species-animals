@@ -1,0 +1,102 @@
+GET http://localhost:8080/api/animals
+
+###
+
+GET http://localhost:8080/api/species_all
+
+###
+
+GET http://localhost:8080/api/animals/1
+
+###
+
+GET http://localhost:8080/api/species_all/pies
+
+###
+
+GET http://localhost:8080/api/species_all/pies/animals
+
+###
+
+GET http://localhost:8080/api/species_all/pies/animals/3
+
+###
+
+POST http://localhost:8080/api/species_all
+Content-Type: application/json
+
+{
+  "species_name": "mruwka",
+  "food_type": "No costam se je glebe itp",
+  "origin_location": "mrowisko",
+  "average_age": 0
+}
+
+###
+
+POST http://localhost:8080/api/animals
+Content-Type: application/json
+
+{
+  "name": "antoni mruwa",
+  "age": 0,
+  "body_mass": 0,
+  "daily_food_mass": 2,
+  "species": "mruwka"
+}
+
+###
+
+GET http://localhost:8080/api/species_all/mruwka/animals/
+
+###
+
+GET http://localhost:8080/api/species_all/mruwka/animals/4
+
+###
+
+PUT http://localhost:8080/api/species_all/mruwka/animals/4
+Content-Type: application/json
+
+{
+  "name": "antoni mruwa",
+  "age": 0,
+  "body_mass": 0,
+  "daily_food_mass": 1
+}
+
+###
+
+GET http://localhost:8080/api/species_all/mruwka/animals/4
+
+###
+
+DELETE http://localhost:8080/api/species_all/mruwka/animals/4
+
+###
+
+GET http://localhost:8080/api/species_all/mruwka/animals
+
+###
+
+GET http://localhost:8080/api/species_all
+
+###
+
+DELETE http://localhost:8080/api/species_all/mruwka
+
+###
+
+POST http://localhost:8080/api/species_all/golomb/animals
+Content-Type: application/json
+
+{
+  "name": "sztirling golomb",
+  "age": 1,
+  "body_mass": 15,
+  "daily_food_mass": 2222
+}
+
+###
+
+GET http://localhost:8080/api/animals
